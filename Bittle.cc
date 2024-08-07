@@ -45,9 +45,9 @@ class triange:public geometry
 {
   return b.getS()<t.getS();
 }*/
-bool compare(std::shared_ptr<geometry>& b, const std::shared_ptr<geometry>& t) 
+bool compare(std::shared_ptr<geometry>& b, std::shared_ptr<geometry>& t) 
 {
-  return b->getS()<t->getS();
+  return b->getS() < t->getS();
 }
 int main()
 {
